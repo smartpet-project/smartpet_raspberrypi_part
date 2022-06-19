@@ -13,9 +13,10 @@ class Transfer(Collect):
         result = self.col.find_one_and_delete(query)
         return True if result == '1' else False
     def feed(self, data):
-        arduino.open()
-        arduino.write(b'f' + str(data).encode('utf8'))
-        arduino.close()
+        # arduino.open()
+        # arduino.write(b'f' + str(data).encode('utf8'))
+        # arduino.close()
+        print('simulation feed.')
 
 if __name__ == '__main__': 
     test = Transfer()
