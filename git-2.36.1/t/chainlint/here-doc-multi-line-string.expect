@@ -1,4 +1,0 @@
-(
-	cat <<-TXT && echo "multi-line	string" ?!AMP?!
-	bap
-)
