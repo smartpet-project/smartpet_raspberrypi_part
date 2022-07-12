@@ -6,7 +6,7 @@ class Transfer(Collect):
     def __init__(self, col_name='transfer') -> None:
         super().__init__(col_name)
     def send_detect_signal(self) -> None:
-        data = {'owner': 2, 'op': 1, 'data': '180'}
+        data = {'owner': 2, 'op': 1, 'data': 180}
         self.col.insert_one(data)
     def get_detect_result(self) -> bool:
         query = {'owner': 2, 'op': 2}
